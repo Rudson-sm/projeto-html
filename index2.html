@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Javascript teste</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        /*alert("Ola mundo!");*/
+        /* document.write("Ola mundo!  ")*/
+    </script>
+    <br>
+    <script>
+        /* document.write("Ola hoje é dia " + Date())*/
+    </script>
+
+    <script>
+        function acendelampada() {
+            document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";
+        }
+
+        function apagalampada() {
+            document.getElementById("luz").src = "_imagens/lampada-apagada.jpg";
+        }
+
+        function quebralampada() {
+            document.getElementById("luz").src = "_imagens/lampada-quebrada.jpg";
+
+        }
+    </script>
+
+    <body>
+
+        <h1>Acenda a Lampada</h1>
+        <img src="_imagens/lampada-apagada.jpg" id="luz" onmouseover="acendelampada()" onmouseout="apagalampada()" onclick="quebralampada()" />
+
+
+    </body>
+
+</html>
